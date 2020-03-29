@@ -26,18 +26,40 @@
       
 
       <div class="main-section__form-inputs">
-        <form action="#">
-          <input type="text" placeholder="Name">
-          <input type="text" placeholder="Last Name">
-          <input type="mail" placeholder="E-mail Address">
-          <input type="password" placeholder="Password">
+        <form>
+          <div class="input-group">
+            <input type="text" placeholder="Name" >
+          <img class="icon-error" src="images/icon-error.svg" alt="error-icon"></img>
+          </div>
+          <div class="error-text">First name cannot be empty</div>
+          
+          <div class="input-group">
+            <input type="text" placeholder="Last Name" >
+          <img class="icon-error" src="images/icon-error.svg" alt="error-icon"></img>
+          </div>
+          <div class="error-text">Last Name cannot be empty</div>
+
+          <div class="input-group">
+            <input type="mail" placeholder="E-mail Address" >
+          <img class="icon-error" src="images/icon-error.svg" alt="error-icon"></img>
+          </div>
+          <div class="error-text">Looks like this is not an e-mail</div>
+
+          <div class="input-group">
+            <input type="password" placeholder="Password" >
+          <img class="icon-error" src="images/icon-error.svg" alt="error-icon"></img>
+          </div>
+          <div class="error-text">Password cannot be empty</div>
+          <button class="btn-primary" type="button">Claim Your Free Trial</button>
         </form>
-        <button class="btn-primary">Claim Your Free Trial</button>
+        
         <p id="terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
       </div>
     </div>
 
     </section>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
